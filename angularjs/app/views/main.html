@@ -1,0 +1,13 @@
+<button class="btn btn-lg btn-warning" ng-click="getDecks()">Shuffle a deck</button>
+Deck Id: {{deck.deck_id}}
+<hr>
+<button class="btn btn-lg btn-primary" ng-click="drawCards()">
+    Draw cards
+</button>
+Total cards - <input class="input-lg input-group-lg" type="number" ng-model="cardsCount" ng-init=" cardsCount = 1"/>
+<hr>
+<div>
+    <span ng-repeat="card in cards">
+        <img ng-src="{{card.image}}"/>   &nbsp;&nbsp;
+    </span>
+</div>
